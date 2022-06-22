@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/wait_inspection_banzhang"
+        android:title="@string/wait_inspection_menu_banzhang"/>
+    <item android:id="@+id/wait_inspection_shebei"
+        android:title="@string/wait_inspection_menu_shebei"/>
+    <item android:id="@+id/wait_inspection_gongyi"
+        android:title="@string/wait_inspection_menu_gongyi"/>
+
+</menu>

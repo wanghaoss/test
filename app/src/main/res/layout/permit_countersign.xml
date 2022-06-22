@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".work.WorkAddSignActivity">
+
+        <com.example.new_androidclient.customize_view.TitleLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/work_add_sign_name" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:text="查看作业票"
+            android:textSize="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_20"
+            android:textColor="@color/app_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/tjLayout"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="治安环部负责人"
+                    android:textSize="@dimen/dp_16"
+                    android:layout_margin="@dimen/dp_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/tjBut1"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/bg_blue"
+                    android:text="审 核"
+                    android:textColor="@color/text_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="作业负责人"
+                    android:textSize="@dimen/dp_16"
+                    android:layout_margin="@dimen/dp_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/tjBut2"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/bg_blue"
+                    android:text="审 核"
+                    android:textColor="@color/text_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="属地单位负责人"
+                    android:textSize="@dimen/dp_16"
+                    android:layout_margin="@dimen/dp_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/tjBut3"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/bg_blue"
+                    android:text="审 核"
+                    android:textColor="@color/text_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="主管厂长"
+                    android:textSize="@dimen/dp_16"
+                    android:layout_margin="@dimen/dp_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/tjBut4"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/bg_blue"
+                    android:text="审 批"
+                    android:textColor="@color/text_white" />
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/erjLayout"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="治安环部安全员"
+                        android:textSize="@dimen/dp_16"
+                        android:layout_margin="@dimen/dp_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/erjBut1"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:background="@drawable/bg_blue"
+                        android:text="审 核"
+                        android:textColor="@color/text_white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="作业负责人"
+                        android:textSize="@dimen/dp_16"
+                        android:layout_margin="@dimen/dp_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/erjBut2"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:background="@drawable/bg_blue"
+                        android:text="审 核"
+                        android:textColor="@color/text_white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="属地车间负责人"
+                        android:textSize="@dimen/dp_16"
+                        android:layout_margin="@dimen/dp_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/erjBut3"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:background="@drawable/bg_blue"
+                        android:text="审 批"
+                        android:textColor="@color/text_white" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/inspection_pic_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_margin="@dimen/dp_25">
+
+        <EditText
+            android:id="@+id/hazard_plan_sign_dialog_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@string/plan_sign_dialog_hing"
+            android:textSize="@dimen/text_size_16" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

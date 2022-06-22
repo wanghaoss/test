@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="work_people"
+            type="com.example.new_androidclient.device_management.bean.ContractorListBean" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".device_management.Adapter.WorkPeopleAdapter">
+
+        <TextView
+            android:text="@{work_people.epName}"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#c8c8c8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"/>
+
+    </LinearLayout>
+</layout>

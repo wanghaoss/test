@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/hazard_analysis_c_100"
+    android:title="@string/analysis_c_100"/>
+<item android:id="@+id/hazard_analysis_c_40"
+    android:title="@string/analysis_c_40"/>
+<item android:id="@+id/hazard_analysis_c_15"
+    android:title="@string/analysis_c_15"/>
+<item android:id="@+id/hazard_analysis_c_7"
+    android:title="@string/analysis_c_7"/>
+<item android:id="@+id/hazard_analysis_c_3"
+    android:title="@string/analysis_c_3"/>
+<item android:id="@+id/hazard_analysis_c_1"
+    android:title="@string/analysis_c_1"/>
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="com.example.new_androidclient.work.WorkDHAppointmentDetailActivity.Listener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".work.WorkDHAppointmentDetailActivity">
+
+        <com.example.new_androidclient.customize_view.TitleLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/work_appointment_dh_name" />
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginBottom="@dimen/dp_50">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp_2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/nextDevice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_2"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_blue"
+                android:onClick="@{()->listener.submit()}"
+                android:text="@string/work_application_appointment_dh_baocun"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

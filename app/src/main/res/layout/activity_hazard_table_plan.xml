@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="listener"
+            type="com.example.new_androidclient.hazard.HazardTablePlanDetailActivity.Listener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".hazard.HazardTablePlanDetailActivity">
+
+        <com.example.new_androidclient.customize_view.TitleLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/hazard_table_plan_detail_name" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:layout_marginHorizontal="@dimen/dp_20" />
+
+        <LinearLayout
+            android:id="@+id/bottom_button_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp_2"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_44"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/bg_blue"
+                android:text="@string/plan_sign_agree"
+                android:onClick="@{()->listener.agree()}"
+                android:textColor="@color/text_white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_44"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/bg_blue"
+                android:text="@string/plan_sign_unagree"
+                android:onClick="@{()->listener.unAgree()}"
+                android:textColor="@color/text_white" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

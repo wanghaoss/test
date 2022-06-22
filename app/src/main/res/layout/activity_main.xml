@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.example.new_androidclient.login.bean.User" />
+
+        <variable
+            name="login_activity"
+            type="com.example.new_androidclient.login.LoginActivity" />
+
+        <variable
+            name="listener"
+            type="com.example.new_androidclient.login.LoginActivity.Listener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_30"
+        android:orientation="vertical"
+        tools:context=".login.LoginActivity">
+
+        <LinearLayout
+            android:id="@+id/activity_main_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_55"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo"
+                android:textSize="@dimen/dp_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/loading_name"
+                android:textSize="@dimen/dp_23" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@drawable/account" />
+
+                <com.example.new_androidclient.customize_view.ClearEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@null"
+                    android:hint="@string/login_name_hint"
+                    android:singleLine="true"
+                    android:text="@={user.name}" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@drawable/password" />
+
+                <com.example.new_androidclient.customize_view.ClearEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@null"
+                    android:hint="@string/login_pwd_hint"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:text="@={user.pwd}" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkbox_record_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="end"
+                android:buttonTint="@color/app_blue"
+                android:checked="true"
+                android:text="@string/record_account"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/activity_main_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginTop="@dimen/dp_33"
+            android:background="@drawable/bg_blue"
+            android:onClick="@{() -> listener.pwdLogin()}"
+            android:text="@string/login_btn"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_18" />
+
+        <LinearLayout
+            android:id="@+id/rfid_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_32"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@drawable/login_rfid" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/login_rfid"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

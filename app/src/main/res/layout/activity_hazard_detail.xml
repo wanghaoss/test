@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="detailBean"
+            type="com.example.new_androidclient.hazard.bean.HazardDetailBean" />
+
+        <variable
+            name="listener"
+            type="com.example.new_androidclient.hazard.HazardDetailActivity.Listener" />
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".hazard.HazardDetailActivity">
+
+        <com.example.new_androidclient.customize_view.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/jihuaxiangqing" />
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{@string/content + listener.count}"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/hazard_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:minHeight="@dimen/dp_60"
+                        android:text="@{detailBean.investigationContent}"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginVertical="@dimen/dp_10"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/is_pass"
+                        android:textSize="@dimen/text_size_16" />
+
+
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/dp_5"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/qualified"
+                            android:layout_width="wrap_content"
+                            android:minWidth="@dimen/dp_120"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/dp_50"
+                            android:onClick="@{()->listener.check_qualified()}"
+                            android:text="@string/qualified"
+                            android:button="@drawable/check_selector"
+                            style="@style/HazardCheckBox"
+                            />
+                        <CheckBox
+                            android:id="@+id/unqualified"
+                            android:layout_width="wrap_content"
+                            android:minWidth="@dimen/dp_120"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/dp_50"
+                            android:onClick="@{()->listener.check_unqualified()}"
+                            android:text="@string/unqualified"
+                            android:button="@drawable/check_selector"
+                            style="@style/HazardCheckBox"
+                            />
+
+                        <TextView
+                            android:id="@+id/hazard_takepic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hazard_takepic"
+                            android:textColor="@color/app_blue"
+                            android:onClick="@{()->listener.takepic()}"/>
+
+                    </RadioGroup>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/hazard_pic_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        android:layout_marginVertical="@dimen/dp_5"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hazard_user"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_60"
+                        android:hint="@string/hazard_hint"
+                        android:textSize="@dimen/text_size_16"
+                        android:text="@={detailBean.investigationUser}"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/hazard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hazard_name"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_60"
+                        android:hint="@string/hazard_hint"
+                        android:text="@={detailBean.hazardName}"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hazard_content"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hazard_hint"
+                        android:inputType="textMultiLine"
+                        android:minLines="3"
+                        android:text="@={detailBean.hazardContent}"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hazard_time"
+                        android:textSize="@dimen/text_size_16" />
+                    <TextView
+                        android:id="@+id/timepicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:gravity="center_vertical"
+                        android:text="@{detailBean.limitRectifyTime}"
+                        android:onClick="@{() -> listener.timePicker()}"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/dp_10">
+
+                    <Button
+                        android:id="@+id/pre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_blue"
+                        android:onClick="@{() -> listener.pre()}"
+                        android:text="@string/hazard_pre"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_size_18" />
+
+
+                    <Button
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_blue"
+                        android:onClick="@{() -> listener.next()}"
+                        android:text="@string/hazard_next"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_size_18" />
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_blue"
+                        android:onClick="@{() -> listener.submit()}"
+                        android:text="@string/hazard_submit"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_size_18"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

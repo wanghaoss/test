@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="com.example.new_androidclient.main.bean.HomeListBean"/>
+        <import type="android.view.View" />
+        <variable
+            name="homeListBean"
+            type="HomeListBean" />
+    </data>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:paddingVertical="@dimen/dp_5">
+        
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_centerHorizontal="true"
+            app:setImage="@{homeListBean.image}"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_below="@id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_15"
+            android:layout_centerHorizontal="true"
+            android:text="@{homeListBean.name}"/>
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignRight="@id/image"
+            android:layout_alignTop="@id/image"
+            android:gravity="center"
+            android:background="@drawable/main_activity_item_number_background"
+            android:text="0"
+            android:visibility="@{homeListBean.number != 0 ? View.VISIBLE : View.INVISIBLE }"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/whiteBackground"
+            />
+    </RelativeLayout>
+</layout>

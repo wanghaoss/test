@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginVertical="@dimen/dp_5">
+    <TextView
+        android:id="@+id/hazard_item_three_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_16"
+        android:layout_centerVertical="true"
+        android:text="隐患名称："/>
+
+    <EditText
+        android:id="@+id/hazard_item_three_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/dp_150"
+        android:maxWidth="@dimen/dp_200"
+        android:layout_alignParentRight="true"
+        android:hint="@string/plan_write"
+        android:textSize="@dimen/text_size_16"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_below="@id/hazard_item_three_name_text"
+        android:background="@color/line"/>
+</RelativeLayout>

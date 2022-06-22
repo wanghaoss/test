@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".work.WorkApplicationCheckListActivity">
+
+        <com.example.new_androidclient.customize_view.TitleLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/work_application_checkList_name" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginBottom="@dimen/dp_65">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/wait_inspection_list_btn_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_blue"
+                android:text="@string/work_application_checkList_btn"
+                android:textColor="@color/text_white" />
+
+            <Button
+                android:id="@+id/noChoice_btn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_blue"
+                android:text="@string/work_gc_check_list_btn_text"
+                android:textColor="@color/text_white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

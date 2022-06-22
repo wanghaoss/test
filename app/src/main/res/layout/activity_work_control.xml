@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".work.WorkControlActivity">
+
+    <com.example.new_androidclient.customize_view.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="作业监督" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/scoutingLayout"
+            android:background="#fafafa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <Button
+                        android:id="@+id/but1"
+                        android:text="作业许可取消"
+                        android:textColor="#ffffff"
+                        android:layout_marginStart="@dimen/dp_30"
+                        android:layout_marginEnd="@dimen/dp_25"
+                        android:background="@drawable/device_agree"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_45"/>
+                </RelativeLayout>
+
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_marginTop="@dimen/dp_25"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="45dp">-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/but2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/dp_45"-->
+<!--                        android:layout_marginStart="@dimen/dp_30"-->
+<!--                        android:layout_marginEnd="@dimen/dp_30"-->
+<!--                        android:background="@drawable/device_agree"-->
+<!--                        android:text="作业许可关闭"-->
+<!--                        android:textColor="#ffffff" />-->
+<!--                </RelativeLayout>-->
+<!--                <RelativeLayout-->
+<!--                    android:layout_marginTop="@dimen/dp_25"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="45dp">-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/but3"-->
+<!--                        android:text="受限空间进出登记表"-->
+<!--                        android:textColor="#ffffff"-->
+<!--                        android:layout_marginStart="@dimen/dp_30"-->
+<!--                        android:layout_marginEnd="@dimen/dp_30"-->
+<!--                        android:background="@drawable/device_agree"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/dp_45"/>-->
+<!--                </RelativeLayout>-->
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <Button
+                        android:id="@+id/but4"
+                        android:text="气体检测"
+                        android:textColor="#ffffff"
+                        android:layout_marginStart="@dimen/dp_30"
+                        android:layout_marginEnd="@dimen/dp_30"
+                        android:visibility="gone"
+                        android:background="@drawable/device_agree"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_45"/>
+                </RelativeLayout>
+<!--                <RelativeLayout-->
+<!--                    android:layout_marginTop="@dimen/dp_25"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="45dp">-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/but5"-->
+<!--                        android:text="查看作业详情"-->
+<!--                        android:textColor="#ffffff"-->
+<!--                        android:layout_marginStart="@dimen/dp_30"-->
+<!--                        android:layout_marginEnd="@dimen/dp_30"-->
+<!--                        android:background="@drawable/device_agree"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/dp_45"/>-->
+<!--                </RelativeLayout>-->
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_200">
+
+                    <RelativeLayout
+                        android:id="@+id/tkLayout1"
+                        android:background="#ffffff"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginStart="@dimen/dp_50"
+                            android:id="@+id/text"
+                            android:textSize="@dimen/dp_16"
+                            android:text="记录时间"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ListView
+                            android:id="@+id/list"
+                            android:layout_below="@+id/text"
+                            android:divider="@null"
+                            android:layout_width="@dimen/dp_250"
+                            android:layout_height="wrap_content"/>
+
+                        <Button
+                            android:id="@+id/timeBut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_50"
+                            android:textColor="#ffffff"
+                            android:layout_centerHorizontal="true"
+                            android:layout_toRightOf="@+id/list"
+                            android:background="@drawable/device_agree"
+                            android:gravity="center"
+                            android:text="记录" />
+                    </RelativeLayout>
+                </LinearLayout>
+<!--                <Button-->
+<!--                    android:id="@+id/success"-->
+<!--                    android:text="保存"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:layout_marginTop="@dimen/dp_30"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/device_agree"-->
+<!--                    android:layout_width="@dimen/dp_100"-->
+<!--                    android:layout_height="@dimen/dp_45"/>-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <com.example.new_androidclient.customize_view.NoDataLayout
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>

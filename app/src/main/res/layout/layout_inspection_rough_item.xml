@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/inspection_area_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:text="name:" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/inspection_pic_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_10">
+
+        <EditText
+            android:id="@+id/inspection_area_detail_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@string/inspection_rough_area_hint"
+            android:textSize="@dimen/text_size_16" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10">
+
+        <Button
+            android:id="@+id/inspection_area_detail_take_pic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_blue"
+            android:text="@string/inspection_rough_area_take_pic"
+            android:textColor="@color/text_white"/>
+
+        <Button
+            android:id="@+id/inspection_area_detail_delete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_blue"
+            android:text="@string/inspection_rough_area_delete"
+            android:textColor="@color/text_white"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/inspection_area_detail_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/line"/>
+
+
+</LinearLayout>

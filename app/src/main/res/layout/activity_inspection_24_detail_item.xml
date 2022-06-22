@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="inspection_24_detail_bean"
+            type="com.example.new_androidclient.inspection.Inspection24ProblemDetailActivity.DetailBean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{inspection_24_detail_bean.name}"
+                android:maxWidth="@dimen/dp_250"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/inspection_24_detail_item_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/inspection_24_detail_item_unit"
+                android:layout_marginRight="5dp"
+                android:text="@{inspection_24_detail_bean.result}"
+                android:textSize="@dimen/text_size_16" />
+            <TextView
+                android:id="@+id/inspection_24_detail_item_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{inspection_24_detail_bean.unit != null ? inspection_24_detail_bean.unit : null}"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/line"/>
+
+
+    </LinearLayout>
+</layout>

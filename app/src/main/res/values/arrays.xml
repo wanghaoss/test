@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>丹东明珠</item>
+        <item>海川农化</item>
+    </string-array>
+
+    <string-array name="hazard_analysis_type">
+        <item></item>
+        <item>人工填写</item>
+        <item>LEC判断法</item>
+    </string-array>
+</resources>

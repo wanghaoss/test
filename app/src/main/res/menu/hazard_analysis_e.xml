@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/hazard_analysis_e_10"
+        android:title="@string/analysis_e_10"/>
+    <item android:id="@+id/hazard_analysis_e_6"
+        android:title="@string/analysis_e_6"/>
+    <item android:id="@+id/hazard_analysis_e_3"
+        android:title="@string/analysis_e_3"/>
+    <item android:id="@+id/hazard_analysis_e_2"
+        android:title="@string/analysis_e_2"/>
+    <item android:id="@+id/hazard_analysis_e_1"
+        android:title="@string/analysis_e_1"/>
+    <item android:id="@+id/hazard_analysis_e_0_5"
+        android:title="@string/analysis_e_0_5"/>
+
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".wait_to_handle.WaitInspectionDetail">
+
+        <com.example.new_androidclient.customize_view.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/wait_inspection_detail_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wait_inspection_detail_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:text="@string/wait_inspection_detail_des"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:text="@string/wait_inspection_detail_pic"
+                android:textSize="@dimen/text_size_16" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/wait_inspection_detail_pic_recyeler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

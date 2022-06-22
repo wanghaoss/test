@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="hazardAnalysisDeviceListBean"
+            type="com.example.new_androidclient.hazard.bean.HazardAnalysisDeviceListBean" />
+    </data>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            android:text='@{@string/device_a + hazardAnalysisDeviceListBean.deviceName}'/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            android:text='@{@string/device_a + hazardAnalysisDeviceListBean.deviceNo}'/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            android:text='@{@string/device_a + hazardAnalysisDeviceListBean.dptName}'/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            android:text='@{@string/device_a + hazardAnalysisDeviceListBean.deviceCatName}'/>
+    </LinearLayout>
+</layout>

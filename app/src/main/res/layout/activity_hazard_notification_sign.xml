@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="com.example.new_androidclient.hazard.HazardNotificationSignActivity.Listener" />
+
+        <variable
+            name="infoBean"
+            type="com.example.new_androidclient.hazard.bean.HazardNotificationSignInfoBean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".hazard.HazardNotificationSignActivity">
+
+        <com.example.new_androidclient.customize_view.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/notify_hazard" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/hazard_notification_sign_investigation_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/hazard_notification_sign_investigationHeadSign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/notify_investigationHeadSign"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:id="@+id/hazard_notification_sign_investigationHeadSign_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/hazard_notification_sign_investigationHeadSign"
+                    android:minWidth="@dimen/dp_130"
+                    android:text="@{infoBean.investigationHeadSign}"
+                    android:hint="@string/hazard_hint"
+                    android:textSize="@dimen/text_size_16" />
+
+                <Button
+                    android:id="@+id/hazard_notification_sign_investigationHeadSign_btn"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_34"
+                    android:layout_toEndOf="@id/hazard_notification_sign_investigationHeadSign_edit"
+                    android:background="@drawable/bg_blue"
+                    android:onClick="@{()-> listener.investigationHeadSign()}"
+                    android:text="@string/notify_sign"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_size_13" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hazard_notification_sign_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/hazard_notification_sign_investigatedHeadSign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/notify_investigatedHeadSign"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:id="@+id/hazard_notification_sign_investigatedHeadSign_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/hazard_notification_sign_investigatedHeadSign"
+                    android:minWidth="@dimen/dp_130"
+                    android:text="@{infoBean.investigatedHeadSign}"
+                    android:hint="@string/hazard_hint"
+                    android:textSize="@dimen/text_size_16" />
+
+                <Button
+                    android:id="@+id/hazard_notification_sign_investigatedHeadSign_btn"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_34"
+                    android:layout_toEndOf="@id/hazard_notification_sign_investigatedHeadSign_edit"
+                    android:background="@drawable/bg_blue"
+                    android:text="@string/notify_sign"
+                    android:onClick="@{()-> listener.investigatedHeadSign()}"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_size_13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hazard_notification_sign_detail_investigatedName_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/hazard_notification_sign_detail_investigatedName_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/notify_investigationName"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/hazard_notification_sign_detail_investigatedName_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/hazard_notification_sign_detail_investigatedName_name"
+                    android:minWidth="@dimen/dp_130"
+                    android:text="@{infoBean.investigationName}"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hazard_notification_sign_detail_investigationType_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/hazard_notification_sign_detail_investigationType_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/notify_investigatedName"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/hazard_notification_sign_detail_investigationType_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/hazard_notification_sign_detail_investigationType_name"
+                    android:minWidth="@dimen/dp_130"
+                    android:text="@{infoBean.investigatedName}"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hazard_notification_sign_detail_majorClass_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/hazard_notification_sign_detail_majorClass_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/notify_investigationType"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/hazard_notification_sign_detail_majorClass_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/hazard_notification_sign_detail_majorClass_name"
+                    android:minWidth="@dimen/dp_130"
+                    android:text="@{infoBean.investigationType}"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hazard_notification_sign_detail_investigationName_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/hazard_notification_sign_detail_investigationName_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/notify_majorClass"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/hazard_notification_sign_detail_investigationName_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/hazard_notification_sign_detail_investigationName_name"
+                    android:minWidth="@dimen/dp_130"
+                    android:text="@{infoBean.majorClass}"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginVertical="5dp"
+                android:background="@color/line" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hazard_notification_sign_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

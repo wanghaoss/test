@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+<variable
+    name="hazard_analysis_device_list_item"
+    type="com.example.new_androidclient.hazard.bean.HazardAnalysisDeviceListBean" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        tools:ignore="ExtraText">
+        <TextView
+            android:id="@+id/hazard_analysis_device_list_item_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="@{@string/analysis_device_select_device_name + hazard_analysis_device_list_item.deviceName + hazard_analysis_device_list_item.deviceNo}"/>
+
+
+        <TextView
+            android:id="@+id/hazard_analysis_device_list_item_device_depName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="@{@string/analysis_device_select_device_dept + hazard_analysis_device_list_item.dptName}"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/line"
+            android:layout_marginHorizontal="@dimen/dp_5"/>
+
+    </LinearLayout>
+</layout>

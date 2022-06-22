@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="inspection_24_list_bean"
+            type="com.example.new_androidclient.inspection.bean.Inspection24Bean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginVertical="@dimen/dp_5">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="@{@string/inspection_24_device_name + inspection_24_list_bean.deviceName}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginVertical="@dimen/dp_5"
+            android:text="@{@string/inspection_24_time + inspection_24_list_bean.inspectionTime.substring(0, inspection_24_list_bean.inspectionTime.length()-3)}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="@{@string/inspection_24_username + inspection_24_list_bean.userName}"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="@dimen/dp_3"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+<variable
+    name="work_blind_plate_item"
+    type="com.example.new_androidclient.work.bean.WorkBlindPlateBean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin = "@dimen/dp_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="@{@string/work_blind_plate_list_name + work_blind_plate_item.deviceName}"
+            android:layout_margin="@dimen/dp_5"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_16"
+        android:text="@{@string/work_blind_plate_list_material + work_blind_plate_item.material}"
+        android:layout_margin="@dimen/dp_5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="@{@string/work_blind_plate_list_isolatePoint + work_blind_plate_item.isolatePoint}"
+            android:layout_margin="@dimen/dp_5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="@{@string/work_blind_plate_list_spec + work_blind_plate_item.spec}"
+            android:layout_margin="@dimen/dp_5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="@{@string/work_blind_plate_list_temperature + work_blind_plate_item.temperature}"
+            android:layout_margin="@dimen/dp_5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="@{@string/work_blind_plate_list_medium + work_blind_plate_item.medium}"
+            android:layout_margin="@dimen/dp_5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="@{@string/work_blind_plate_list_pressure + work_blind_plate_item.pressure}"
+            android:layout_margin="@dimen/dp_5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="@{@string/work_blind_plate_list_isolateMethod + work_blind_plate_item.isolateMethod}"
+            android:layout_margin="@dimen/dp_5"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/line" />
+
+
+
+
+    </LinearLayout>
+</layout>

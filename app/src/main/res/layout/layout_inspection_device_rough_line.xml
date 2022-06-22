@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--item的上分割线-->
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#efefef" />
+
+    <!--item内容部分的容器-->
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/inspection_device_rough_line_text_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"
+            tools:text="@string/app_name" />
+
+        <CheckBox
+            android:id="@+id/inspection_device_rough_line_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="@string/inspection_device_rough_item_text"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:id="@+id/inspection_device_rough_line_right_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/inspection_device_rough_line_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_15"
+                android:layout_gravity="center"
+                android:text="@string/inspection_device_rough_item_right_text"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/text_size_11"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--item的下分割线-->
+    <View
+        android:id="@+id/divider_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/dp_60"
+        android:background="#efefef" />
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/toolbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:background="@color/app_blue"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_40"
+                android:background="@drawable/back" />
+        </LinearLayout> <!-- back-->
+
+
+        <TextView
+            android:id="@+id/toolbar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_18"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_10" /><!-- TextView-->
+
+        <LinearLayout
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:background="@drawable/more" />
+        </LinearLayout><!-- more-->
+
+        <LinearLayout
+            android:id="@+id/bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/bluetooth_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:textColor="@color/text_white" />
+        </LinearLayout><!-- blue-->
+
+        <LinearLayout
+            android:id="@+id/logout_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:text="退出登录"
+                android:textColor="@color/text_white" />
+        </LinearLayout><!-- logout-->
+
+        <LinearLayout
+        android:id="@+id/hazard_plan_upload_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_44"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/hazard_plan_upload_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:text="上传文件"
+            android:textColor="@color/text_white" />
+    </LinearLayout><!--hazard_upload-->
+
+        <LinearLayout
+            android:id="@+id/device_management_tack_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:background="@drawable/search" />
+        </LinearLayout><!--device_management_tack_pic-->
+
+        <LinearLayout
+            android:id="@+id/hazard_plan_take_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/hazard_plan_take_pic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:text="拍照"
+                android:textColor="@color/text_white" /><!--hazard_plan_take_pic-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edition_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:background="@drawable/edition" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/work_switch_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/work_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:text="设备详情"
+                android:textColor="@color/text_white" />
+        </LinearLayout> <!--作业模块踏勘切换-->
+
+
+    </RelativeLayout>
+</layout>

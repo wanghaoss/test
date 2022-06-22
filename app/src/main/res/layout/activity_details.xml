@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".device_management.srarch.DetailsActivity">
+
+    <com.example.new_androidclient.customize_view.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="设备详情" />
+    <RelativeLayout
+        android:id="@+id/basicLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <TextView
+            android:text="基本信息详情"
+            android:textSize="15sp"
+            android:layout_marginStart="@dimen/dp_25"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/basicText"
+            tools:text="aaaaaa"
+            android:textSize="15sp"
+            android:textColor="#999999"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/device_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_05"/>
+
+    <RelativeLayout
+        android:id="@+id/sealingPointLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <TextView
+            android:text="密封点详情"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/sealingPointText"
+            tools:text="aaaaaa"
+            android:textSize="15sp"
+            android:textColor="#999999"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/device_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_05"/>
+
+    <RelativeLayout
+        android:id="@+id/mainParameterLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <TextView
+            android:text="主要参数详情"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/mainParameterText"
+            tools:text="aaaaaa"
+            android:textSize="15sp"
+            android:textColor="#999999"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/device_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_05"/>
+
+    <RelativeLayout
+        android:id="@+id/operatingParametersLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <TextView
+            android:text="运行参数详情"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/operatingParametersText"
+            tools:text="aaaaaa"
+            android:textSize="15sp"
+            android:textColor="#999999"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/device_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_05"/>
+
+    <RelativeLayout
+        android:id="@+id/subsidiaryLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <TextView
+            android:text="附属设备详情"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/subsidiaryText"
+            tools:text="aaaaaa"
+            android:textSize="15sp"
+            android:textColor="#999999"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/device_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_05"/>
+
+    <RelativeLayout
+        android:id="@+id/relationLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <TextView
+            android:text="关联设备详情"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/relationText"
+            tools:text="aaaaaa"
+            android:textSize="15sp"
+            android:textColor="#999999"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/device_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_05"/>
+
+</LinearLayout>

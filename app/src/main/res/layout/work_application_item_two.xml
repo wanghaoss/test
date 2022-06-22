@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginVertical="@dimen/dp_5">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/work_item_two_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/work_item_two_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toLeftOf="@id/work_item_two_name_right_image"
+            android:maxWidth="@dimen/dp_200"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/work_item_two_name_right_image"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/more_right" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/relative"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/line" />
+
+
+</RelativeLayout>

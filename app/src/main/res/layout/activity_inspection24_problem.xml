@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".inspection.Inspection24ProblemListActivity"
+        android:orientation="vertical">
+
+        <com.example.new_androidclient.customize_view.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             app:moduleName="inspection"
+            app:name="@string/inspection_24_List"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/inspection_24_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.example.new_androidclient.customize_view.NoDataLayout
+            android:id="@+id/inspection_24_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</layout>

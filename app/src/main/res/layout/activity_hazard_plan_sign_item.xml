@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="hazard_plan_sign"
+            type="com.example.new_androidclient.hazard.bean.HazardPlanListBean" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="@{@string/plan_sign_hazardName + hazard_plan_sign.hazardName}"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="@{@string/plan_sign_hazardContent + hazard_plan_sign.hazardContent}"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="@{@string/plan_sign_hazardCategory + hazard_plan_sign.hazardCategory}"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        android:text="@{@string/plan_sign_hazardGrade + hazard_plan_sign.hazardGrade}"
+        android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="@{@string/plan_sign_rectificationPlan + hazard_plan_sign.rectificationPlan}"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="@{@string/plan_sign_rectificationPlanDoc + hazard_plan_sign.rectificationPlanDoc}"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="@{@string/plan_sign_fundingName + hazard_plan_sign.fundingName}"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="@{@string/plan_sign_planFinishedDate + hazard_plan_sign.planFinishedDate.substring(0,10)}"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="@{@string/plan_sign_unfinishedReason + hazard_plan_sign.unfinishedReason}"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="@{@string/plan_sign_investigationTime + hazard_plan_sign.investigationTime.substring(0,10)}"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="@{@string/plan_sign_rectificationChargePersonName + hazard_plan_sign.rectificationChargePersonName}"
+            android:textSize="@dimen/text_size_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/line"
+            android:layout_marginVertical="@dimen/dp_5"/>
+
+
+    </LinearLayout>
+</layout>

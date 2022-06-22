@@ -1,46 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="flowGroup">
-        <attr name="childSpaceVertical" format="dimension" />
-        <attr name="childSpaceHorizontal" format="dimension" />
-    </declare-styleable>
-    <declare-styleable name="VerificationCodeView">
-        <attr name="isNetCode" format="boolean"/>
-        <attr name="codeNumber" format="integer"/>
-    </declare-styleable>
-    <declare-styleable name="dashedline">
-        <attr name="lineColor" format="color" />
-        <attr name="orientation">
-            <enum name="horizontal" value="0" />
-            <enum name="vertical" value="1" />
+    <declare-styleable name="TitleLayout">
+        <attr name="name" format="string"/>
+        <attr name="showMorePic" format="boolean"/>
+        <attr name="showBlueTooth" format="boolean"/>
+        <attr name="showHazardPic" format="boolean"/>
+        <attr name="showHazardUploadFile" format="boolean"/>
+        <attr name="showLogout" format="boolean"/>
+        <attr name="showEditionAddNotice" format="boolean"/>
+        <attr name="work_switch" format="boolean"/>
+        <attr name="moduleName">
+            <enum name="inspection" value="1"/>
+            <enum name="wait_inspection" value="2"/>
+            <enum name="main" value="3"/>
+            <enum name="hazard_pic" value="4"/>
+            <enum name="hazard_upload" value="5"/>
         </attr>
+        <attr name="search" format="boolean"/>
     </declare-styleable>
-    <declare-styleable name="PayPsdInputView">
-
-        <attr name="maxCount" format="integer" />
-        <attr name="circleColor" format="color" />
-        <attr name="bottomLineColor" format="color" />
-        <attr name="radius" format="dimension" />
-        <attr name="divideLineWidth" format="dimension" />
-        <attr name="divideLineColor" format="color" />
-        <attr name="rectAngle" format="dimension" />
-        <attr name="focusedColor" format="color"/>
-        <attr name="psdType" format="enum">
-            <enum name="weChat" value="0" />
-            <enum name="bottomLine" value="1" />
-        </attr>
-    </declare-styleable>
-
-    <declare-styleable name="pickerview">
-        <attr name="pickerview_gravity">
-            <enum name="center" value="17"/>
-            <enum name="left" value="3"/>
-            <enum name="right" value="5"/>
-        </attr>
-        <attr name="pickerview_textSize" format="dimension"/>
-        <attr name="pickerview_textColorOut" format="color"/>
-        <attr name="pickerview_textColorCenter" format="color"/>
-        <attr name="pickerview_dividerColor" format="color"/>
-    </declare-styleable>
-
 </resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/inspection_stop"
+        android:title="@string/inspection_menu_stop"/>
+
+<!--    <item android:id="@+id/inspection_problem"-->
+<!--        android:title="@string/inspection_menu_24problem"/>-->
+
+<!--    <item android:id="@+id/inspection_menu_area_rough"-->
+<!--        android:title="@string/inspection_menu_area_rough"/>-->
+
+<!--    <item android:id="@+id/inspection_route"-->
+<!--        android:title="@string/inspection_menu_route" />-->
+
+</menu>

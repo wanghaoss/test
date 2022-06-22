@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FAFAFA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".work.AboutWorkActivity">
+
+    <com.example.new_androidclient.customize_view.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="选择工作步骤" />
+
+
+    <RelativeLayout
+        android:id="@+id/listLayout"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#FAFAFA"
+            android:choiceMode="multipleChoice"
+            android:dividerHeight="1dp"
+            android:background="#ffffff"
+            android:scrollbars="none">
+        </ListView>
+
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/buttonLayout"-->
+        <!--            android:layout_below="@+id/listview"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/dp_80">-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/define"-->
+        <!--                android:text="确定"-->
+        <!--                android:textSize="18sp"-->
+        <!--                android:textColor="#ffffff"-->
+        <!--                android:layout_centerInParent="true"-->
+        <!--                android:background="@drawable/device_agree"-->
+        <!--                android:layout_width="@dimen/dp_200"-->
+        <!--                android:layout_height="wrap_content"/>-->
+        <!--        </RelativeLayout>-->
+    </RelativeLayout>
+
+    <com.example.new_androidclient.customize_view.NoDataLayout
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</RelativeLayout>

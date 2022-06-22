@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#E3E3E3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".work.HotWorkActivity">
+
+    <com.example.new_androidclient.customize_view.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="气体分析" />
+
+
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:text="申请编号："
+                            android:textSize="15sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/text1"
+                            tools:text="aaaaaa"
+                            android:textSize="15sp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:background="#c8c8c8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:text="属地单位："
+                            android:textSize="15sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/text2"
+                            tools:text="aaaaaa"
+                            android:textSize="15sp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:background="#c8c8c8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:text="装置单元："
+                            android:textSize="15sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/text3"
+                            tools:text="aaaaaa"
+                            android:textSize="15sp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:background="#c8c8c8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:text="作业内容："
+                            android:textSize="15sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/text4"
+                            tools:text="aaaaaa"
+                            android:textSize="15sp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:background="#c8c8c8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:text="分析点名称："
+                            android:textSize="15sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <EditText
+                            android:id="@+id/text5"
+                            tools:text="aaaaaa"
+                            android:textSize="15sp"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:textCursorDrawable="@null"
+                            android:background="@drawable/edit_background"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_width="@dimen/dp_200"
+                            android:layout_height="45dp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:background="#c8c8c8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:text="检测条件："
+                            android:textSize="15sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/text6"
+                            tools:text="aaaaaa"
+                            android:textSize="15sp"
+                            android:background="@drawable/edit_background"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_width="@dimen/dp_200"
+                            android:layout_height="45dp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:background="#c8c8c8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:text="协助采样人："
+                            android:textSize="15sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/text13"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:textCursorDrawable="@null"
+                            android:background="@drawable/edit_background"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="70dp"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"/>
+
+                        <TextView
+                            android:id="@+id/tkButton"
+                            android:text="查找"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/device_blue"
+                            android:layout_marginEnd="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:paddingEnd="@dimen/dp_10"
+                            android:paddingStart="@dimen/dp_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:background="#c8c8c8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:text="联系方式："
+                            android:textSize="15sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/text8"
+                            tools:text="aaaaaa"
+                            android:textSize="15sp"
+                            android:background="@drawable/edit_background"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_width="@dimen/dp_200"
+                            android:layout_height="45dp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:background="#c8c8c8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <TextView
+                            android:text="采取措施(多选):"
+                            android:textSize="15sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/text9"
+                            tools:text="aaaaaa"
+                            android:textSize="15sp"
+                            android:background="@drawable/edit_background"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_width="@dimen/dp_200"
+                            android:layout_height="@dimen/dp_45"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:background="#c8c8c8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_200">
+
+                    <ListView
+                        android:id="@+id/gasList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/addTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:layout_marginRight="@dimen/dp_2"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_blue"
+                        android:text="添加"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <Button
+                        android:id="@+id/nextDevice"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:layout_marginRight="@dimen/dp_2"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_blue"
+                        android:text="@string/work_application_appointment_dh_baocun"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_size_16" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    <com.example.new_androidclient.customize_view.NoDataLayout
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>

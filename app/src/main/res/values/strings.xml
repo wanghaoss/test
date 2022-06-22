@@ -1,93 +1,287 @@
 <resources>
-    <string name="app_name">易托仓储管理</string>
+    <string name="app_name">铸宁</string>
 
-    <string name="pull_to_refresh_pull_label">轻轻下拉,刷新精彩</string>
-    <string name="pull_to_refresh_release_label">松开后刷新</string>
-    <string name="pull_to_refresh_refreshing_label">正在刷新\u2026</string>
-    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
-    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
-    <string name="pull_to_refresh_footer_refreshing_label">正在加载中\u2026</string>
-
-    <string name="double_tap_to_exit">再按一次退出程序</string>
-    <string name="login">登录</string>
-    <string name="text_btn_init">百度账号绑定</string>
-    <string name="text_btn_init1">更换百度账号</string>
-    <string name="text_btn_on_push">打开Push</string>
-    <string name="text_btn_off_push">关闭Push</string>
-    <string name="log_tip">日志：</string>
-    <string name="clear_log">清除日志</string>
+    <string name="shouye">首页</string>
 
 
-    <string name="product_material">材质：%s</string>
-    <string name="product_count">数量：%d</string>
-    <string name="product_size">规格：%s</string>
+    <!--登录-->
+    <string name="loading_name">安全管理系统</string>
+    <string name="login_name_hint">请输入账号</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="record_account">记住账号</string>
+    <string name="login_btn">登   录</string>
+    <string name="login_rfid">刷卡登录</string>
 
-    <string name="price_with_symbol">¥%.2f</string>
+    <!--隐患-->
+    <string name="content">检查内容：</string>
+    <string name="is_pass">是否合格：</string>
+    <string name="qualified">合 格</string>
+    <string name="unqualified">不合格</string>
+    <string name="hazard_name">隐患名称：</string>
+    <string name="hazard_content">隐患内容：</string>
+    <string name="hazard_time">限期整改时间：</string>
+    <string name="hazard_user">检查人员：(若为多人以逗号分割开)</string>
+    <string name="hazard_hint">请输入</string>
+    <string name="hazard_hint_time">点击选择时间</string>
+    <string name="hazard_pre">上一条</string>
+    <string name="hazard_next">下一条</string>
+    <string name="hazard_submit">完成排查</string>
+    <string name="hazard_ver_submit">完成验收</string>
+    <string name="hazard_analysis_submit">完成分析</string>
+    <string name="hazard_government_submit">完成整改</string>
+    <string name="hazard_plan_submit">完成计划编写</string>
+    <string name="status_one">排查中</string>
+    <string name="status_two">已整改</string>
+    <string name="ver_is_pass">整改完成情况</string>
+    <string name="ver_qualified">完  成</string>
+    <string name="ver_unqualified">未完成</string>
+    <string name="ver_description">说 明：</string>
+    <string name="ver_hazard_user">验收负责人:(默认为登录人)</string>
+    <string name="ver_time">整改完成时间：</string>
+    <string name="ver_list_name">待验收列表</string>
+    <string name="paichaliebiao">隐患排查表单</string>
+    <string name="jihuaxiangqing">计划详情</string>
+    <string name="yinhuanxiangqing">隐患详情</string>
+    <string name="yinhuanyanshou">隐患验收</string>
+    <string name="hazard_takepic">点击拍照</string>
+    <string name="notify_investigationHeadSign">检查单位负责人：</string>
+    <string name="notify_investigatedHeadSign">受检单位负责人：</string>
+    <string name="notify_sign">提交</string>
+    <string name="notify_investigationType">检查类型：</string>
+    <string name="notify_investigationName">检查单位：</string>
+    <string name="notify_investigatedName">受检单位：</string>
+    <string name="notify_majorClass">专业分类：</string>
+    <string name="notify_hazard_des">隐患描述：</string>
+    <string name="notify_hazard_limitRectifyTime">限期整改时间：</string>
+    <string name="notify_hazard_investigationUser">检查人：</string>
+    <string name="notify_hazard_investigationTime">检查时间：</string>
+    <string name="notify_hazard">隐患整改通知单</string>
+    <string name="analysis_name">隐患分析</string>
+    <string name="analysis_sign_name">隐患分析审核审批</string>
 
-    <string name="scan_text">请对准托盘上的二维码</string>
+    <string name="analysis_c_100">10人以上死亡  100</string>
+    <string name="analysis_c_40">3-9人死亡  40</string>
+    <string name="analysis_c_15">1-2人死亡  15</string>
+    <string name="analysis_c_7">严重  7</string>
+    <string name="analysis_c_3">重大，伤残  3</string>
+    <string name="analysis_c_1">引人注意  1</string>
+
+    <string name="analysis_category_great">重大隐患</string>
+    <string name="analysis_category_normal">一般隐患</string>
+
+    <string name="analysis_grade_banzu">班组级</string>
+    <string name="analysis_grade_chejian">车间级</string>
+    <string name="analysis_grade_chang">厂级</string>
+    <string name="analysis_grade_qiye">企业级</string>
+
+    <string name="analysis_l_10">完全可以预料  10</string>
+    <string name="analysis_l_6">相当可能  6</string>
+    <string name="analysis_l_3">可能，但不经常  3</string>
+    <string name="analysis_l_1">可能性小，完全意外  1</string>
+    <string name="analysis_l_0_5">很不可能，可以设想  0.5</string>
+    <string name="analysis_l_0_2">极不可能  0.2</string>
+    <string name="analysis_l_0_1">实际不可能  0.1</string>
+
+    <string name="analysis_e_10">连续暴露  10</string>
+    <string name="analysis_e_6">每天工作时间内暴露  6</string>
+    <string name="analysis_e_3">每周一次或偶然暴露  3</string>
+    <string name="analysis_e_2">每月一次暴露  2</string>
+    <string name="analysis_e_1">每年几次暴露  1</string>
+    <string name="analysis_e_0_5">非常罕见暴露  0.5</string>
+
+    <string name="analysis_factor_wu">物的不安全状态</string>
+    <string name="analysis_factor_ren">人的不安全行为</string>
+    <string name="analysis_factor_an">安全管理缺陷</string>
+
+    <string name="analysis_true">是</string>
+    <string name="analysis_false">否</string>
+
+    <string name="analysis_device_select_name">搜索设备</string>
+    <string name="analysis_device_select_device_name">设备名称：</string>
+    <string name="analysis_device_select_device_no">设备位号：</string>
+    <string name="analysis_device_select_device_dept">设备所在车间：</string>
+
+    <string name="device_list">设备列表</string>
+
+    <string name="analysis_person_select">选择负责人</string>
+    <string name="analysis_dept_name">选择隐患所属部门</string>
+    <string name="analysis_type_person">人工填写</string>
+    <string name="analysis_type_lec">LEC判断法</string>
+
+    <string name="plan_name">填写整改计划</string>
+    <string name="plan_write">请填写</string>
+    <string name="plan_sign">整改计划审批</string>
+    <string name="plan_sign_agree">同意</string>
+    <string name="plan_sign_unagree">不同意</string>
+
+    <string name="plan_sign_hazardName">隐患名称：</string>
+    <string name="plan_sign_hazardContent">隐患内容：</string>
+    <string name="plan_sign_hazardCategory">隐患类别：</string>
+    <string name="plan_sign_hazardGrade">隐患等级：</string>
+    <string name="plan_sign_rectificationPlan">防范措施：</string>
+    <string name="plan_sign_rectificationPlanDoc">整改治理方案：</string>
+    <string name="plan_sign_fundingName">资金来源：</string>
+    <string name="plan_sign_planFinishedDate">整改完成时间：</string>
+    <string name="plan_sign_unfinishedReason">不能完成原因：</string>
+    <string name="plan_sign_investigationTime">隐患排查日期：</string>
+    <string name="plan_sign_rectificationChargePersonName">整改负责人：</string>
+    <string name="plan_sign_dialog_hing">同意可选填，不同意必填</string>
+    <string name="plan_sign_dialog_submit">提交</string>
+
+    <string name="government_name">整改治理</string>
+    <string name="hazard_plan_upload_name">请选择上传文件</string>
+    <string name="hazard_plan_upload_cuoshi">防范措施文件</string>
+    <string name="hazard_plan_upload_fangan">整改方案文件</string>
+    <string name="hazard_plan_upload_finish">完成</string>
+    <string name="hazard_main">隐患管理</string>
+    <string name="hazard_table_plan_name">隐患计划列表</string>
+    <string name="hazard_table_plan_detail_name">隐患排查计划详情</string>
+    <string name="hazard_table_plan_detail_item_planname">检查类型：</string>
+    <string name="hazard_table_plan_detail_item_name">负责部门：</string>
+    <string name="hazard_table_plan_detail_item_index">序号：</string>
+    <string name="hazard_major_hidden_danger_hazardName">隐患名称：</string>
+    <string name="hazard_major_hidden_danger_hazardContent">隐患内容：</string>
+    <string name="hazard_major_hidden_danger_person">检查人：</string>
+    <string name="hazard_major_hidden_danger_time">检查时间：</string>
+    <string name="hazard_major_hidden_danger_list">重大隐患列表</string>
 
 
-    <string name="notifyTitle">提示</string>
-    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
-    <string name="setting">设置</string>
-    <string name="cancel">取消</string>
+    <!--巡检-->
+    <string name="inspection_device_list_item_name">设备名称：</string>
+    <string name="inspection_device_list_item_use_status">设备状态：</string>
+    <string name="inspection_device_list_item_status">巡检状态：</string>
+    <string name="inspection_device_detail_use_status_one">运行</string>
+    <string name="inspection_device_detail_use_status_two">备用</string>
+    <string name="inspection_device_detail_use_status_three">检修</string>
+    <string name="inspection_device_rough_list_item_name">区域名称：</string>
+    <string name="inspection_device_rough_list_item_use_status">区域状态：</string>
+    <string name="checkbox_point">泄漏</string>
+    <string name="checkbox_open">开</string>
+    <string name="checkbox_close">关</string>
+    <string name="nextDevice">下一设备</string>
+    <string name="nextArea">下一区域</string>
+    <string name="inspection_content">巡检内容</string>
+    <string name="endInspection">结束巡检</string>
+    <string name="takePhoto">结束巡检</string>
+    <string name="picDescriptionhint">请输入图片描述</string>
+    <string name="device_picDescriptionhint">请输入描述</string>
+    <string name="picDescription">密封点详情</string>
+    <string name="finishpic">完成</string>
+    <string name="takepic">拍照片</string>
+    <string name="selectSpec">请选择巡检的参数</string>
+    <string name="finishCheck">完  成</string>
+    <string name="hasPic">已拍照</string>
+    <string name="inspection_menu_stop">终止</string>
+    <string name="inspection_menu_24problem">24小时异常</string>
+    <string name="inspection_menu_area_rough">宏观巡检</string>
+    <string name="inspection_menu_route">巡检路线</string>
+    <string name="inspection_stop">终止巡检</string>
+    <string name="inspection_stop_title">请填写终止理由</string>
+    <string name="inspection_24_device_name">设备名称：</string>
+    <string name="inspection_24_time">巡检时间：</string>
+    <string name="inspection_24_username">巡检人：</string>
+    <string name="inspection_24_List">24小时异常列表</string>
+    <string name="inspection_24_List_detail">异常详情</string>
+    <string name="inspection_Area_list">巡检路线</string>
+    <string name="inspection_rough_area_hint"> 请输入宏观巡检结果</string>
+    <string name="inspection_rough_area_take_pic">拍 照</string>
+    <string name="inspection_rough_area_pic">查 看</string>
+    <string name="inspection_rough_area_delete">删 除</string>
+    <string name="inspection_rough">宏观巡检</string>
+    <string name="inspection_rough_btn_device">添加异常设备</string>
+    <string name="inspection_rough_btn_finish">完成</string>
+    <string name="inspection_rough_device_list">请选择要添加的异常设备</string>
+    <string name="inspection_area_distinguish">请选择巡检类型</string>
+    <string name="inspection_area_distinguish_plan">计划巡检</string>
+    <string name="inspection_area_distinguish_random">随机巡检</string>
+    <string name="inspection_detail_no_instrument">本设备无密封点或其它，请直接点击下方按钮</string>
+    <string name="inspection_detail_overhaul_text">请直接点击下方按钮</string>
+    <string name="inspection_device_rough_item_text">不合格</string>
+    <string name="inspection_device_rough_item_right_text">关联设备</string>
+    <string name="inspection_device_rough_select">关联设备</string>
+    <string name="inspection_device_rough_select_device">选择设备</string>
+    <string name="inspection_device_rough_pic">设备详情</string>
+    <string name="inspection_device_area_edit_hint">请输入区域描述</string>
+    <string name="inspection_device_area_radio_qualify">合格</string>
+    <string name="inspection_device_area_radio_unQualify">不合格</string>
+    <string name="inspection_nfc_name">请将手机靠近NFC卡</string>
 
-    <string name="login_tip">点击\"登录\"代表您已同意《服务条款》</string>
-    <string name="net_error">网络未连接,请检查网络设置</string>
 
-    <string name="dialog_exit">确认要退出吗?</string>
-    <string name="Search_locate_content">输入城市名或拼音查询</string>
+    <!--待办-->
+    <string name="wait_inspection_list_name">巡检待办列表</string>
+    <string name="wait_inspection_list_to_gongyi">工艺员</string>
 
-    <string name="shoppingcat">购物车</string>
-    <string name="actionBar_edit">管理</string>
-    <string name="all">全选</string>
-    <string name="order_total">合计 :</string>
+    <string name="wait_inspection_list_to">判断异常类型</string>
+    <string name="wait_inspection_list_to_dis">是否可以处置</string>
+    <string name="wait_inspection_list_to_dismiss">异常消除</string>
+    <string name="wait_inspection_list_to_not">非异常</string>
 
-    <string name="no_ren_hint">请到PC端认证</string>
-    <string name="take_photo">拍照</string>
-    <string name="pick_photo">相册</string>
-    <string name="ok">确认</string>
-
-    <string name="prompt">提示</string>
-    <string name="browse">修改</string>
-    <string name="delete">删除</string>
-
-    <string name="edit_phone">请输入手机号</string>
-    <string name="phone_error">手机号码不正确</string>
-    <string name="edit_car_num">请输入车牌号码</string>
-    <string name="edit_car_length">请输入车辆长度</string>
-    <string name="edit_car_load">请输入车辆载重</string>
-
-    <string name="text_fingerprint_hint">“易托”的触控ID</string>
-    <string name="text_dialog_hint">正在写数据,请勿移走手持设备...</string>
+    <string name="wait_inspection_detail_name">参数详情</string>
+    <string name="wait_inspection_detail_des">参数描述：</string>
+    <string name="wait_inspection_detail_pic">参数图片：</string>
+    <string name="wait_inspection_menu_banzhang">切换成班长</string>
+    <string name="wait_inspection_menu_shebei">切换成设备员</string>
+    <string name="wait_inspection_menu_gongyi">切换成工艺员</string>
+    <string name="wait_main_list_item_modelName">模块名：</string>
+    <string name="wait_main_list_item_taskName">任务名：</string>
+    <string name="wait_main_list_item_taskTime">任务时间：</string>
+    <string name="wait_main_list_name">待办列表</string>
 
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--设备-->
+    <string name="device_temporary_list">临时计划列表</string>
+    <string name="work_order_list">工单列表</string>
+    <string name="work_order">计划详情</string>
+    <string name="device_a">设备名称</string>
+    <string name="device_archives">档案管理</string>
+    <string name="device_new"> </string>
+    <string name="device_search">设备搜索</string>
 
 
+    <!--    设置-->
+    <string name="main_edition">设置</string>
 
-
-
-    <string name="uhf_msg_read_tag_fail">读取标签号失败</string>
-    <string name="uhf_msg_addr_not_null">地址不能为空</string>
-    <string name="uhf_msg_addr_must_decimal">地址必须为十进制数据</string>
-    <string name="uhf_msg_addr_must_len8">访问密码的长度必须为8位</string>
-    <string name="uhf_msg_write_must_not_null">写入数据不能为空</string>
-    <string name="uhf_msg_write_must_len4">写入数据的字符串长度必须为4位</string>
-    <string name="uhf_msg_tag_must_not_null">标签号不能为空</string>
-    <string name="uhf_msg_write_succ">写入数据成功</string>
-    <string name="uhf_msg_write_fail">写入数据失败</string>
-    <string name="uhf_msg_len_not_null">长度不能为空</string>
-    <string name="uhf_msg_len_must_decimal">长度必须为十进制数据</string>
-    <string name="uhf_msg_write_must_len4x">写入数据的字符串长度必须为4的倍数</string>
-    <string name="uhf_msg_read_data_fail">读取数据失败</string>
-
-    <string name="uhf_msg_inventory_fail">识别失败</string>
-    <string name="uhf_msg_inventory_stop_fail">停止识别标签失败</string>
-    <string name="uhf_msg_inventory_open_fail">开启识别标签失败</string>
-    <string name="uhf_msg_set_frequency_fail">设置频率失败</string>
-    <string name="uhf_msg_set_frequency_succ">设置频率成功</string>
-    <string name="uhf_msg_read_frequency_fail">读取频率失败</string>
-    <string name="uhf_msg_read_frequency_succ">读取频率成功</string>
-
+    <!--  作业 -->
+    <string name="work_application_name">作业申请</string>
+    <string name="work_application_type_name">作业类型</string>
+    <string name="work_application_type_hint">同期申请的所有特殊作业均需在此选取</string>
+    <string name="work_application_type_type">同期申请的所有特殊作业均需在此选取</string>
+    <string name="work_application_btn_next">下一步</string>
+    <string name="work_application_dh_name">动火作业申请</string>
+    <string name="work_application_gc_name">高处作业申请</string>
+    <string name="work_application_dt_name">动土作业申请</string>
+    <string name="work_application_sx_name">受限作业申请</string>
+    <string name="work_application_dz_name">吊装作业申请</string>
+    <string name="work_application_gx_name">管线打开作业申请</string>
+    <string name="work_application_dl_name">断路作业申请</string>
+    <string name="work_application_ld_name">临时用电作业申请</string>
+    <string name="work_application_checkList_name">请选择</string>
+    <string name="work_application_checkList_btn">确  定</string>
+    <string name="work_application_involve_name">作业涉及事项选择</string>
+    <string name="work_application_appointment_name">作业预约</string>
+    <string name="work_application_appointment_dh_name">作业安全措施方案</string>
+    <string name="work_application_appointment_dh_baocun">保存</string>
+    <string name="work_application_appointment_dh_sign">审核</string>
+    <string name="work_blind_plate_name">工艺隔离及盲板抽堵清单</string>
+    <string name="work_blind_plate_btn_name">工艺隔离及盲板抽堵清单</string>
+    <string name="work_blind_plate_add_btn_name">添加</string>
+    <string name="work_blind_plate_add_name">请填写</string>
+    <string name="work_blind_plate_list_name">管道/设备名称：</string>
+    <string name="work_blind_plate_list_material">盲板材质：</string>
+    <string name="work_blind_plate_list_isolatePoint">隔离点符号：</string>
+    <string name="work_blind_plate_list_spec">盲板规格：</string>
+    <string name="work_blind_plate_list_temperature">温度：</string>
+    <string name="work_blind_plate_list_medium">介质：</string>
+    <string name="work_blind_plate_list_pressure">压力：</string>
+    <string name="work_blind_plate_list_isolateMethod">隔离方法：</string>
+    <string name="work_sign_name">作业票</string>
+    <string name="work_sign_btn_name">签字</string>
+    <string name="work_add_sign_name">签字页面</string>
+    <string name="work_appointment_dh_name">动火作业预约</string>
+    <string name="work_gc_check_list_btn_text">无以上选项</string>
+    <string name="work_application_dk_device_list_name">设备列表</string>
 
 </resources>

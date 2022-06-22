@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+            <TextView
+                android:text="设备名称："
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/item5"
+                tools:text="aaaaaa"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <View
+            android:background="#bfbfbf"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_05"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+            <TextView
+                android:text="所属车间："
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/item1"
+                tools:text="aaaaaa"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <View
+            android:background="#bfbfbf"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_05"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+            <TextView
+                android:text="所属装置："
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/item2"
+                tools:text="aaaaaa"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <View
+            android:background="#bfbfbf"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_05"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+            <TextView
+                android:text="设备编码："
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/item3"
+                tools:text="aaaaaa"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <View
+            android:background="#bfbfbf"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_05"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+            <TextView
+                android:text="设备类别："
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/item4"
+                tools:text="aaaaaa"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

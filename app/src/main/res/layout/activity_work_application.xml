@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="com.example.new_androidclient.work.WorkApplicationActivity.Listener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".work.WorkApplicationActivity">
+
+        <com.example.new_androidclient.customize_view.TitleLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/work_application_name" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:id="@+id/work_type_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="@dimen/dp_5">
+
+                    <TextView
+                        android:id="@+id/work_application_type_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work_application_type_name"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:maxWidth="@dimen/dp_250"
+                        android:text="@string/work_application_type_hint"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <GridLayout
+                        android:id="@+id/checkbox_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/work_application_type_name"
+                        android:orientation="vertical" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/checkbox_linear"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/line" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/work_type_relative"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/nextDevice"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:layout_marginRight="@dimen/dp_2"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_blue"
+                        android:onClick="@{()->listener.submitData()}"
+                        android:text="@string/work_application_btn_next"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_size_16" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

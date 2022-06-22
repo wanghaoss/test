@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".hazard.HazardAnalysisPersonSelectActivity"
+        android:orientation="vertical">
+        <com.example.new_androidclient.customize_view.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/analysis_person_select"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hazard_analysis_person_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>

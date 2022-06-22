@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".device_management.srarch.CorrespondingTypeActivity">
+
+    <com.example.new_androidclient.customize_view.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="@string/device_search"/>
+
+
+    <RelativeLayout
+        android:id="@+id/basicMessageLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <TextView
+            android:text="基本信息"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:src="@drawable/device_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/sealingPointLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <TextView
+            android:text="密封点"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:src="@drawable/device_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/mainParameterLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <TextView
+            android:text="主要技术参数"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:src="@drawable/device_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/operatingParametersLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <TextView
+            android:text="运行参数"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:src="@drawable/device_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/accessoryLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <TextView
+            android:text="附属设备"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:src="@drawable/device_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45">
+
+        <TextView
+            android:text="关联设备"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:src="@drawable/device_right"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+</LinearLayout>

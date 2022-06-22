@@ -1,95 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#0271ff</color>
 
-
-    <color name="colorBackground">#f0f0f0</color>
-    <color name="colorLightBlue">#45ADFF</color>
-    <color name="colorDeepBlue">#3C8DFF</color>
-
-    <color name="colorPink">#FD6A51</color>
-    <color name="colorDeepBlack">#585858</color>
-    <color name="colorLightBlack">#7C7C7C</color>
-    <color name="bank_card_notice_color">#e02631</color>
-
-    <color name="transparent">#00000000</color>
-    <color name="white">#FFFFFF</color>
+    <color name="whiteBackground">#FFFFFF</color>
+    <color name="line">#D1D1D1</color>
     <color name="black">#000000</color>
-    <color name="bg_black">#515254</color>
-    <color name="red">#E1423C</color>
-    <color name="red_bg">#f25a4c</color>
-    <color name="translucence">#506050</color>
-    <color name="bg_gray">#e5eaef</color>
-    <color name="green">#65e17b</color>
-    <color name="green_text">#47bfa8</color>
-    <color name="gray_deep">#9b9b9c</color>
-    <color name="transparent80">#05000000</color>
-    <color name="line_gray">#cacaca</color>
-    <color name="gray_deep_bg">#b6b7b9</color>
-    <color name="bg_blue">#4d84f5</color>
-
-    <color name="font_black">#333333</color>
-    <color name="font_gray">#999999</color>
-    <color name="font_gray_light">#CCCCCC</color>
-    <color name="font_blue">#4d84f5</color>
-    <color name="font_orange">#ef8201</color>
-    <color name="font_orange_red">#fd6b07</color>
-    <color name="colorThemeBackground">#eff2f6</color>
-    <!--扫码-->
-    <color name="result_view">#b0000000</color>
-    <color name="viewfinder_mask">#60000000</color>
-    <color name="possible_result_points">#c0ffff00</color>
-
-    <color name="no_data_grey_plan">#77787c</color>
-    <color name="white_bg_100">#00FFFFFF</color>
-    <color name="bg_black_50">#80000000</color>
-    <color name="bt_bg_gray">#cbcbcb</color>
-    <!--城市选择copy-->
-
-    <color name="mainGray">#F2F6F7</color>
-    <color name="main_40">#40ACD6</color>
-    <color name="main_a8">#A8E0F5</color>
-    <color name="gray_f4">#F4F4F4</color>
-    <color name="gray_5">#555555</color>
-    <color name="gray_6">#666666</color>
-    <color name="gray_8">#888888</color>
-    <color name="gray_65">#656565</color>
-    <color name="gray_9">#999999</color>
-    <color name="gray_ec">#ECECEC</color>
-    <color name="gray_e">#EEEEEE</color>
-    <color name="gray_f8">#F8F8F8</color>
-    <color name="mainColor">#6BC8EC</color>
-    <color name="light_main">#94D9F4</color>
-    <color name="line">#E5E5E5</color>
-
-    <color name="test">#50B3DA</color>
-
-    <color name="transparent40">#66000000</color>
+    <color name="app_blue">#0271ff</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="main_activity_item_number">#FF5454</color>
+    <color name="red">#FF5554</color>
 
 
-    <color name="tab_bg_gray">#f1f5fe</color>
-    <!--全透明-->
-    <color name="alpha_100">#00000000</color>
-    <color name="alpha_50">#50000000</color>
-    <color name="white_alpha_50">#D0FFFFFF</color>
+    <color name="common_blue">#00bac5</color>
+    <color name="common_blue_1">#5ecdd4</color>
+    <color name="login_head_view_bgcolor">#00bac5</color>
 
-    <!--出入库  收托   已扫未扫-->
-    <color name="sweeped">#00bc8c</color>
-    <color name="not_sweeping">#8c8c8c</color>
+    <!--作业模块 签字-->
+    <color name="sign_border_gray">#7e7d7c</color>
+    <color name="sign_seal_red">#c2292c</color>
+    <color name="sign_pen_black">#101010</color>
+    <color name="sign_pen_red">#ec041f</color>
+    <color name="sign_pen_green">#0cba02</color>
+    <color name="sign_pen_yellow">#f9d403</color>
+    <color name="sign_pen_blue">#027de9</color>
+    <color name="sign_toolbar_bg">#0c53ab</color>
+    <color name="sign_bg">#f5f5f5</color>
+    <color name="white">#ffffff</color>
 
-    //pickerview
-    <color name="colorAccent">#FF4081</color>
-    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
-    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
-    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
-    <color name="doucument_green">#43C117</color>
-    <color name="doucument_gray">#666666</color>
+    <!--作业模块 签字-->
 
-    <!--指纹-->
-    <color name="fingerprint_orange">#ff6537</color>
-    <color name="coupon_font">#ff5353</color>
-    <color name="setting_back">#FFA68C</color>
-    <color name="colorDeepBlue2">#5281e1</color>
-    <color name="black2">#282525</color>
 </resources>

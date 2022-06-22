@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/analysis_grade_banzu"
+        android:title="@string/analysis_grade_banzu"/>
+    <item android:id="@+id/analysis_grade_chejian"
+        android:title="@string/analysis_grade_chejian"/>
+    <item android:id="@+id/analysis_grade_chang"
+        android:title="@string/analysis_grade_chang"/>
+    <item android:id="@+id/analysis_grade_qiye"
+        android:title="@string/analysis_grade_qiye"/>
+</menu>

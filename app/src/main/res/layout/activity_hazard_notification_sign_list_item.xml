@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+<variable
+    name="hazard_notification_sign_list_bean"
+    type="com.example.new_androidclient.hazard.bean.HazardNotificationSignListBean" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/hazard_notification_sign_list_item_hazardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/hazard_name"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/hazard_notification_sign_detail_investigatedName_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/hazard_notification_sign_list_item_hazardName"
+                android:minWidth="@dimen/dp_130"
+                android:textSize="@dimen/text_size_16"
+                android:text="@{hazard_notification_sign_list_bean.hazardName}"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/hazard_notification_sign_list_item_hazardContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/notify_hazard_des"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/hazard_notification_sign_list_item_hazardContent"
+                android:minWidth="@dimen/dp_130"
+                android:textSize="@dimen/text_size_16"
+                android:text="@{hazard_notification_sign_list_bean.hazardContent}"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/hazard_notification_sign_list_item_limitRectifyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/notify_hazard_limitRectifyTime"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/hazard_notification_sign_list_item_limitRectifyTime"
+            android:minWidth="@dimen/dp_130"
+            android:textSize="@dimen/text_size_16"
+            android:text="@{hazard_notification_sign_list_bean.limitRectifyTime}"/>
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/hazard_notification_sign_list_item_investigationUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/notify_hazard_investigationUser"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/hazard_notification_sign_list_item_investigationUser"
+                android:minWidth="@dimen/dp_130"
+                android:textSize="@dimen/text_size_16"
+                android:text="@{hazard_notification_sign_list_bean.investigationUser}"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/hazard_notification_sign_list_item_investigationTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/notify_hazard_investigationTime"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/hazard_notification_sign_list_item_investigationTime"
+                android:minWidth="@dimen/dp_130"
+                android:textSize="@dimen/text_size_16"
+                android:text="@{hazard_notification_sign_list_bean.investigationTime}"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/line"/>
+    </LinearLayout>
+</layout>

@@ -1,1 +1,16 @@
 /build
+app.iml
+.gradle/
+build/
+*.dex
+*.apk
+*.ap_
+local.properties
+.idea/workspace.xml
+.idea/libraries
+.idea/gradle.xml
+.idea/misc.xml
+.idea/*
+.DS_Store
+bin/
+gen/

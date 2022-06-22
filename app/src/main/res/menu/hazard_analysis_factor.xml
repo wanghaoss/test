@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/hazard_analysis_factor_wu"
+        android:title="@string/analysis_factor_wu"/>
+    <item android:id="@+id/analysis_factor_ren"
+        android:title="@string/analysis_factor_ren"/>
+    <item android:id="@+id/analysis_factor_an"
+        android:title="@string/analysis_factor_an"/>
+
+</menu>

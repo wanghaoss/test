@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginVertical="@dimen/dp_5">
+
+    <TextView
+        android:id="@+id/involve_item_layout_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/involve_item_layout_radioGroup"
+        android:textSize="@dimen/text_size_16" />
+
+    <RadioGroup
+        android:id="@+id/involve_item_layout_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/involve_item_layout_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是"
+            android:textSize="@dimen/text_size_16" />
+
+        <RadioButton
+            android:id="@+id/involve_item_layout_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="否"
+            android:textSize="@dimen/text_size_16" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/involve_item_layout_radioGroup"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/line" />
+</RelativeLayout>

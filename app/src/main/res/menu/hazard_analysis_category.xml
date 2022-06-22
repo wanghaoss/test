@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/hazard_analysis_category_great"
+        android:title="@string/analysis_category_great"/>
+    <item android:id="@+id/hazard_analysis_category_normal"
+        android:title="@string/analysis_category_normal"/>
+</menu>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="listener"
+            type="com.example.new_androidclient.hazard.HazardAnalysisDeviceSelectActivity.Listener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".hazard.HazardAnalysisDeviceSelectActivity"
+        android:orientation="vertical">
+
+        <com.example.new_androidclient.customize_view.TitleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/analysis_device_select_name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:text="@string/analysis_device_select_device_name"/>
+            <EditText
+                android:id="@+id/hazard_analysis_select_device_name"
+                android:layout_width="@dimen/dp_280"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:text="@string/analysis_device_select_device_no"/>
+            <EditText
+                android:id="@+id/hazard_analysis_select_device_tag_no"
+                android:layout_width="@dimen/dp_280"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="@dimen/dp_44"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="@dimen/dp_10"
+            android:background="@drawable/bg_blue"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/text_white"
+            android:text="@string/analysis_device_select_name"
+            android:onClick="@{()->listener.selectDevice()}"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hazard_analysis_select_device_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+
+        <com.example.new_androidclient.customize_view.NoDataLayout
+            android:id="@+id/hazard_analysis_select_device_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</layout>

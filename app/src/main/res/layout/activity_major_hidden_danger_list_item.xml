@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="hazard_major_hidden_danger_list"
+            type="com.example.new_androidclient.hazard.bean.HazardMajorHiddenDangerListBean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@{@string/hazard_major_hidden_danger_hazardName + hazard_major_hidden_danger_list.hazardName}"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/right"
+            android:text="@{@string/hazard_major_hidden_danger_hazardContent + hazard_major_hidden_danger_list.hazardContent}"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/right"
+            android:text="@{@string/hazard_major_hidden_danger_person + hazard_major_hidden_danger_list.investigationUser}"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/right"
+            android:text="@{@string/hazard_major_hidden_danger_time + hazard_major_hidden_danger_list.investigationTime}"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/line" />
+    </LinearLayout>
+</layout>

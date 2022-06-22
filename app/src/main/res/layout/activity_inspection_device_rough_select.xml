@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="com.example.new_androidclient.inspection.InspectionDeviceRoughAndAreaSelectActivity.Listener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".inspection.InspectionDeviceRoughSelectActivity">
+
+        <com.example.new_androidclient.customize_view.TitleLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name="@string/inspection_device_rough_select" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:layout_marginVertical="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备名称："
+                android:textSize="@dimen/text_size_16" />
+
+            <EditText
+                android:id="@+id/inspection_device_rough_select_device_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:layout_marginVertical="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备位号："
+                android:textSize="@dimen/text_size_16" />
+
+            <EditText
+                android:id="@+id/inspection_device_rough_select_device_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/dp_280"
+            android:layout_height="@dimen/dp_44"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="@dimen/dp_10"
+            android:background="@drawable/bg_blue"
+            android:onClick="@{()->listener.select()}"
+            android:text="@string/analysis_device_select_name"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_16" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/inspection_device_rough_select_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/inspection_device_area_select_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</layout>

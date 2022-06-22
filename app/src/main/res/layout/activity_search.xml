@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".device_management.srarch.SearchActivity">
+
+    <com.example.new_androidclient.customize_view.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="@string/device_search"/>
+
+    <LinearLayout
+        android:id="@+id/spinner1Layout"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="所属分厂："
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/spinner1"
+            android:text="请选择所属分厂"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/spinner2Layout"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="所属车间："
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/spinner2"
+            android:text="请选择所属车间"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/spinner3Layout"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="所属装置："
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/spinner3"
+            android:text="请选择所属装置"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/spinner4Layout"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="专业类别："
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/spinner4"
+            android:text="请选择专业类别"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/spinner5Layout"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="扩展类别："
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/spinner5"
+            android:text="请选择扩展类别"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="设备名称："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/deviceName"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_width="180dp"
+            android:background="@null"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="设备编码："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/tagNo"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_width="180dp"
+            android:background="@null"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="设备位号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/deviceNo"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_width="180dp"
+            android:background="@null"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:background="#bfbfbf"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80">
+
+        <Button
+            android:id="@+id/agree"
+            android:text="确定"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:background="@drawable/device_no_agree"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>
