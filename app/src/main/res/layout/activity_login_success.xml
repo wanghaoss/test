@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/successful_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:background="@drawable/image_successful"/>
+
+        <TextView
+            android:id="@+id/successful_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/successful_imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y20"
+            android:text="恭喜您"
+            android:textSize="@dimen/tv_25_sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/successful_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y5"
+            android:text="注册成功！"
+            android:textSize="@dimen/tv_25_sp"/>
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/login_bt"
+        style="@style/CommonBlueBtn"
+        android:layout_marginBottom="@dimen/y10"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/y20"
+        android:text="完成"/>
+</LinearLayout>

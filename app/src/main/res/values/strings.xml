@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">易托仓储管理</string>
+
+    <string name="pull_to_refresh_pull_label">轻轻下拉,刷新精彩</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载中\u2026</string>
+
+    <string name="double_tap_to_exit">再按一次退出程序</string>
+    <string name="login">登录</string>
+    <string name="text_btn_init">百度账号绑定</string>
+    <string name="text_btn_init1">更换百度账号</string>
+    <string name="text_btn_on_push">打开Push</string>
+    <string name="text_btn_off_push">关闭Push</string>
+    <string name="log_tip">日志：</string>
+    <string name="clear_log">清除日志</string>
+
+
+    <string name="product_material">材质：%s</string>
+    <string name="product_count">数量：%d</string>
+    <string name="product_size">规格：%s</string>
+
+    <string name="price_with_symbol">¥%.2f</string>
+
+    <string name="scan_text">请对准托盘上的二维码</string>
+
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+
+    <string name="login_tip">点击\"登录\"代表您已同意《服务条款》</string>
+    <string name="net_error">网络未连接,请检查网络设置</string>
+
+    <string name="dialog_exit">确认要退出吗?</string>
+    <string name="Search_locate_content">输入城市名或拼音查询</string>
+
+    <string name="shoppingcat">购物车</string>
+    <string name="actionBar_edit">管理</string>
+    <string name="all">全选</string>
+    <string name="order_total">合计 :</string>
+
+    <string name="no_ren_hint">请到PC端认证</string>
+    <string name="take_photo">拍照</string>
+    <string name="pick_photo">相册</string>
+    <string name="ok">确认</string>
+
+    <string name="prompt">提示</string>
+    <string name="browse">修改</string>
+    <string name="delete">删除</string>
+
+    <string name="edit_phone">请输入手机号</string>
+    <string name="phone_error">手机号码不正确</string>
+    <string name="edit_car_num">请输入车牌号码</string>
+    <string name="edit_car_length">请输入车辆长度</string>
+    <string name="edit_car_load">请输入车辆载重</string>
+
+    <string name="text_fingerprint_hint">“易托”的触控ID</string>
+    <string name="text_dialog_hint">正在写数据,请勿移走手持设备...</string>
+
+
+
+
+
+
+
+    <string name="uhf_msg_read_tag_fail">读取标签号失败</string>
+    <string name="uhf_msg_addr_not_null">地址不能为空</string>
+    <string name="uhf_msg_addr_must_decimal">地址必须为十进制数据</string>
+    <string name="uhf_msg_addr_must_len8">访问密码的长度必须为8位</string>
+    <string name="uhf_msg_write_must_not_null">写入数据不能为空</string>
+    <string name="uhf_msg_write_must_len4">写入数据的字符串长度必须为4位</string>
+    <string name="uhf_msg_tag_must_not_null">标签号不能为空</string>
+    <string name="uhf_msg_write_succ">写入数据成功</string>
+    <string name="uhf_msg_write_fail">写入数据失败</string>
+    <string name="uhf_msg_len_not_null">长度不能为空</string>
+    <string name="uhf_msg_len_must_decimal">长度必须为十进制数据</string>
+    <string name="uhf_msg_write_must_len4x">写入数据的字符串长度必须为4的倍数</string>
+    <string name="uhf_msg_read_data_fail">读取数据失败</string>
+
+    <string name="uhf_msg_inventory_fail">识别失败</string>
+    <string name="uhf_msg_inventory_stop_fail">停止识别标签失败</string>
+    <string name="uhf_msg_inventory_open_fail">开启识别标签失败</string>
+    <string name="uhf_msg_set_frequency_fail">设置频率失败</string>
+    <string name="uhf_msg_set_frequency_succ">设置频率成功</string>
+    <string name="uhf_msg_read_frequency_fail">读取频率失败</string>
+    <string name="uhf_msg_read_frequency_succ">读取频率成功</string>
+
+
+</resources>

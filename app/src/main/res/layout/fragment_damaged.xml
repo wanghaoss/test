@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/im_no_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+
+            android:id="@+id/im_icon_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@mipmap/loss_nodata"/>
+
+        <TextView
+            android:id="@+id/tv_massage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y15"
+            android:text="暂时没有托盘报损哦~"
+            android:textColor="@color/font_gray"
+            android:textSize="14sp"
+            />
+
+        <Button
+            android:id="@+id/bt_add_damaged"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/y30"
+            android:background="@drawable/blue_btn_bg"
+            android:padding="15dp"
+            android:text="新增报损"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_16_sp"
+            />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:divider="@color/colorBackground"
+        android:dividerHeight="@dimen/y5"
+        android:visibility="visible"
+        app:ptrAnimationStyle="flip"
+        app:ptrMode="both"/>
+
+    <Button
+        android:id="@+id/bt_add_damaged_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y10"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y10"
+        android:background="@drawable/blue_btn_bg"
+        android:padding="15dp"
+        android:text="新增报损"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_16_sp"
+        android:visibility="visible"/>
+</LinearLayout>

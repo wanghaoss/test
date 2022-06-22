@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_all"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/common_5dp"
+        android:paddingLeft="@dimen/common_10dp"
+        android:paddingTop="@dimen/common_16dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="@color/font_blue"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <TextView
+            android:id="@+id/tv_phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_14dp"
+            android:text="name"
+            android:textColor="#999999"
+            android:textSize="@dimen/tv_14_sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/common_5dp"
+        android:paddingLeft="@dimen/common_10dp">
+
+        <TextView
+            android:id="@+id/tv_carload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车辆型号:"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+
+        <TextView
+            android:id="@+id/tv_carmodelVelue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_14dp"
+            android:text="name"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/common_10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/common_5dp"
+            android:paddingLeft="@dimen/common_10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_carnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车牌号码:"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/tv_14_sp"/>
+
+            <TextView
+                android:id="@+id/tv_carnumvelue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_14dp"
+                android:text="name"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/tv_14_sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_editor"
+                android:text=" 编辑"
+                android:textColor="#464646"
+                android:textSize="@dimen/tv_16_sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

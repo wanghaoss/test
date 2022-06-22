@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TP_SFT-H600.iml" filepath="$PROJECT_DIR$/TP_SFT-H600.iml" group="TP_SFT-H600" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="TP_SFT-H600/app" />
+      <module fileurl="file://$PROJECT_DIR$/deivice/deivicee.iml" filepath="$PROJECT_DIR$/deivice/deivicee.iml" group="TP_SFT-H600/deivicee" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" group="TP_SFT-H600/library" />
+      <module fileurl="file://$PROJECT_DIR$/okgo/okgo.iml" filepath="$PROJECT_DIR$/okgo/okgo.iml" group="TP_SFT-H600/okgo" />
+      <module fileurl="file://$PROJECT_DIR$/xtablayoutlibrary/xtablayoutlibrary.iml" filepath="$PROJECT_DIR$/xtablayoutlibrary/xtablayoutlibrary.iml" group="TP_SFT-H600/xtablayoutlibrary" />
+    </modules>
+  </component>
+</project>

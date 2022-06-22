@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootSystemLayout"
+              android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_general_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:visibility="visible"
+        android:background="@color/bg_blue">
+
+        <RelativeLayout
+            android:id="@+id/btn_prev"
+            android:layout_width="@dimen/header_height"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/back_white" />
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/tv_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:maxLength="10"
+
+            android:text=""
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/pubic_web_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</LinearLayout>

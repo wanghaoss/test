@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/l_item_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y30">
+            <TextView
+                android:id="@+id/tv_order_branch_name"
+                android:layout_width="@dimen/x200"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/tv_14_sp"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/x15"
+                android:text="乌鲁木齐服务网点"
+                android:drawableLeft="@mipmap/icon_order_arrival"
+                android:drawablePadding="@dimen/x5"/>
+
+            <TextView
+                android:id="@+id/iv_status_by_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/y5"
+                android:layout_marginBottom="@dimen/y5"
+                android:text="待收托"
+                android:textColor="@color/font_orange"
+
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@color/line"/>
+
+        <com.etuo.kucun.view.NoScrollListView
+            android:id="@+id/my_no_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/line"
+
+            android:dividerHeight="0.4dp">
+
+        </com.etuo.kucun.view.NoScrollListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@color/line_gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y10"
+            android:layout_marginBottom="@dimen/y10">
+
+            <TextView
+                android:id="@+id/tv_order_serial_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/tv_14_sp"
+
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/x15"
+                android:text="订单编号 : 2016844565661"/>
+
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@color/line"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+
+
+        android:layout_marginRight="@dimen/x10">
+
+
+        <TextView
+            android:id="@+id/tv_in_stock_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实际入库时间: 2018-09-18"
+            android:textColor="@color/font_orange"
+           android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:textSize="@dimen/tv_13_sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_operator_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="操作人: --"
+            android:textColor="@color/font_orange"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10"
+            android:textSize="@dimen/tv_13_sp"/>
+        <TextView
+            android:id="@+id/bt_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/y5"
+            android:layout_marginRight="@dimen/x5"
+            android:layout_marginTop="@dimen/y5"
+
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_round_orange"
+            android:paddingBottom="@dimen/y5"
+            android:paddingLeft="@dimen/x18"
+            android:paddingRight="@dimen/x18"
+            android:paddingTop="@dimen/y5"
+
+            android:text="入库"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_14_sp"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_gray"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_marginRight="@dimen/x5"
+        android:padding="@dimen/common_5dp">
+    <TextView
+        android:id="@+id/tv_No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_10dp"
+        android:text="序号"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/tv_13_sp" />
+        />
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_10dp"
+        android:text="托盘编码"
+        android:layout_weight="2.5"
+        android:gravity="center"
+
+        android:layout_toRightOf="@id/tv_tpNO"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/tv_13_sp"/>
+
+    <TextView
+        android:id="@+id/tv_yanshou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验收"
+        android:background="@drawable/shape_rectangle_line_black_bg_white"
+        android:textColor="@color/font_black"
+        android:paddingTop="@dimen/x3"
+        android:paddingBottom="@dimen/x3"
+        android:paddingLeft="@dimen/x5"
+        android:paddingRight="@dimen/x5"
+        android:textSize="@dimen/tv_12_sp"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

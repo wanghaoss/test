@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_dialog_bg">
+
+        <TextView
+            android:id="@+id/dialog_version_titleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/y10"
+            android:layout_marginRight="@dimen/y10"
+            android:layout_marginTop="@dimen/y10"
+            android:text="【V1.0.1更新提示】"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dialog_version_contentTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/y10"
+            android:layout_marginRight="@dimen/y10"
+            android:layout_marginTop="@dimen/y8"
+            android:layout_marginBottom="@dimen/y8"
+            android:lineSpacingExtra="1.0dp"
+            android:lineSpacingMultiplier="1.2" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y38"
+
+            android:orientation="vertical">
+
+            <View style="@style/App_RootView_H" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/dialog_version_cancelRL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/dialog_closeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="忽略"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <View style="@style/App_RootView_V" />
+
+                <RelativeLayout
+                    android:id="@+id/dialog_version_updateRL"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/dialog_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="后台下载"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

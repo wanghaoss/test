@@ -1,0 +1,2 @@
+include ':app', ':okgo', ':library', ':xtablayoutlibrary', ':deivicee'
+project(':deivicee').projectDir = new File('deivice')

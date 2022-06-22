@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/colorBackground"
+                tools:context=".ui.activity.MassageActivity">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_massagelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        app:ptrAnimationStyle="flip"
+
+        app:ptrMode="both">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/im_no_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+
+            android:id="@+id/im_icon_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@mipmap/icon_no_data"/>
+
+        <TextView
+            android:id="@+id/tv_massage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/y15"
+
+            android:text="当前无信息"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/tv_16_sp"
+            />
+
+        
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"/>
+
+        <com.etuo.kucun.utils.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+
+            android:layout_margin="@dimen/y10"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_login_close"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerInParent="true"
+                android:background="@mipmap/scan_bg"
+                android:gravity="center"
+
+                android:text="请对准托盘上的二维码"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_open_flashlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_hide"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/common_60dp"
+                android:drawablePadding="@dimen/x5"
+                android:drawableTop="@mipmap/icon_flash_light"
+                android:text="轻点照亮"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_14_sp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/l_tp_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/y15"
+                android:paddingTop="@dimen/y15"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_item_info_icon"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x100"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x10"
+                    android:background="@color/white"
+                    android:src="@mipmap/icon_de_kind"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/l_item3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_xinghao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/x5"
+                            android:text="型号: 1214D"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/tv_14_sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_caoliao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/x5"
+                            android:text="材料: 塑料"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/tv_14_sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_jiegou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/x5"
+                            android:text="结构: 日式"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/tv_14_sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/x20"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未盘"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/tv_16_sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_latt_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/y8"
+                            android:text="50"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/tv_28_sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/l_item3"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_leixing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/x5"
+                            android:text="类型: 网格"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/tv_14_sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_chicun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/x5"
+                            android:text="尺寸: 1200mm x 1100mm"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/tv_14_sp"/>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

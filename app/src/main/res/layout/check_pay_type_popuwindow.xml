@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_pop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@null"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/l_find_nearby_Branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="确认付款"
+                android:padding="@dimen/y10"
+                android:gravity="center"
+
+                android:textSize="@dimen/tv_16_sp"
+                android:textColor="@color/font_black"
+              />
+            <ImageView
+                android:id="@+id/iv_close_pop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x10"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray"
+            />
+        <TextView
+            android:id="@+id/tv_cnt_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¥ 888.8 "
+            android:padding="@dimen/y12"
+            android:gravity="center"
+
+            android:textSize="@dimen/tv_16_sp"
+            android:textColor="@color/font_black"
+            />
+
+        <TextView
+            android:id="@+id/tv_order_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单信息: "
+
+            android:layout_marginLeft="@dimen/x25"
+            android:gravity="center_vertical"
+
+            android:paddingTop="@dimen/y5"
+            android:paddingBottom="@dimen/y5"
+            android:textSize="@dimen/tv_16_sp"
+            android:textColor="@color/font_black"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/x25"
+            android:layout_marginRight="@dimen/x25"
+            android:background="@color/line_gray"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingRight="@dimen/x25"
+            android:paddingLeft="@dimen/x25"
+
+            android:layout_marginTop="@dimen/y10">
+
+            <RadioButton
+                android:id="@+id/radiobutton_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:checked="true"
+
+                android:drawableEnd="@drawable/select_pay_type"
+                android:gravity="center_vertical"
+                android:padding="@dimen/x10"
+              android:text="微信支付"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/tv_14_sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_gray"/>
+            <RadioButton
+                android:id="@+id/radiobutton_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="@dimen/x5"
+                android:drawableEnd="@drawable/select_pay_type"
+                android:gravity="center_vertical"
+                android:padding="@dimen/x10"
+                android:text="支付宝支付"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/tv_14_sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_gray"/>
+            <RadioButton
+            android:id="@+id/radiobutton_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:checked="false"
+            android:drawablePadding="@dimen/x5"
+            android:drawableEnd="@drawable/select_pay_type"
+            android:gravity="center_vertical"
+            android:padding="@dimen/x10"
+            android:text="其他支付"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/tv_14_sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_gray"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/login_bt"
+            style="@style/CommonBlueBtn"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/y40"
+            android:text="立即付款"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

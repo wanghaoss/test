@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_gray"
+                android:orientation="vertical"
+               >
+
+    <LinearLayout
+        android:id="@+id/rltwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/x10">
+
+        <ImageView
+            android:id="@+id/iv_tuopan_kind"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/y50"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@color/bg_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/iv_tuopan_kind"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tuopan_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝色网格塑料托盘 1.2m*1.2m"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/tv_14_sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/y5"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_tuopan_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="ET01"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/tv_14_sp"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_tuopan_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="x100"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/tv_14_sp"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/rlthree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_below="@id/rltwo"
+
+        android:padding="@dimen/x10">
+
+        <ImageView
+            android:id="@+id/iv_tuopan_kind_cargo"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/y50"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@color/bg_gray"/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x15"
+
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/iv_tuopan_kind"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_tuopan_name_cargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝色网格塑料托盘 1.2m*1.2m"
+                android:textColor="@color/font_black"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textSize="@dimen/tv_14_sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/y5"
+                android:visibility="visible"
+                >
+
+                <TextView
+                    android:id="@+id/tv_cargo_num"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+
+                    android:text="x100"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/tv_14_sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_cargo_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="100kg"
+                    android:layout_marginLeft="@dimen/y5"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/tv_14_sp"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_kuqu_num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+
+                    android:text="库区: A001"
+                    android:layout_marginLeft="@dimen/y5"
+                    android:textColor="@color/font_black"
+                    android:textSize="@dimen/tv_14_sp"
+
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

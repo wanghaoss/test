@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:psd="http://schemas.android.com/apk/res-auto"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_black"
+        android:textSize="@dimen/tv_16_sp"
+        android:text="设置六位数字的账户支付密码"
+        android:gravity="center_horizontal"
+       android:layout_marginTop="@dimen/y55"
+        android:layout_marginBottom="@dimen/y55"/>
+
+    <com.etuo.kucun.widget.PayPsdInputView
+        android:id="@+id/my_pay_pwd_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        psd:maxCount="6"
+        psd:psdType="weChat"
+        psd:rectAngle="4dp"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_hide_massage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/tv_14_sp"
+        android:text="支付密码不能使重复,连续的数字"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y35"
+        android:layout_marginBottom="@dimen/y35"/>
+    <Button
+        android:id="@+id/ok_bt"
+        style="@style/CommonBlueBtn"
+        android:layout_marginBottom="@dimen/y10"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:visibility="gone"
+        android:text="确认"/>
+
+</LinearLayout>

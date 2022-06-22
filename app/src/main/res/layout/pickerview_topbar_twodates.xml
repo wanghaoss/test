@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white">
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="15dp"
+        android:text="取消"
+        android:textColor="#333333"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/startdate_llyt"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="#43c117"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/startdate_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间"
+                android:textColor="#ffffff"
+                android:textSize="9sp"/>
+
+            <TextView
+                android:id="@+id/startdate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="2017年07月08日"
+                android:textColor="#ffffff"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/enddate_llyt"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/enddate_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="截止时间"
+                android:textSize="9sp"/>
+
+            <TextView
+                android:id="@+id/enddate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="2017年07月08日"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@id/btnSubmit"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:paddingRight="15dp"
+        android:text="确认"
+        android:textColor="#43c117"
+        android:textSize="15sp"/>
+</RelativeLayout>

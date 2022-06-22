@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y36"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/y5"
+            android:layout_marginTop="@dimen/y10"
+            android:background="@drawable/edit_bg"
+            android:orientation="horizontal">
+
+
+            <ImageView
+
+                android:layout_width="@dimen/x18"
+                android:layout_height="@dimen/x18"
+
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_mobile"/>
+            <com.etuo.kucun.widget.ClearEditText
+                android:id="@+id/find_account_et"
+                style="@style/CommonEditText"
+                android:inputType="number"
+                android:layout_gravity="center_vertical"
+                android:hint="输入手机号"
+                android:maxLength="11"
+                android:text=""
+               />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y36"
+        android:layout_marginBottom="@dimen/y5"
+        android:layout_marginTop="@dimen/y5"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:background="@drawable/edit_bg"
+        android:orientation="horizontal">
+
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/x18"
+
+            android:layout_height="@dimen/x18"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_code_num"/>
+
+        <com.etuo.kucun.widget.ClearEditText
+            android:id="@+id/find_pwd_verify_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="输入验证码"
+            android:maxLines="1"
+            android:inputType="number"
+            android:paddingLeft="@dimen/x5"
+            android:text=""
+            android:textColor="@color/font_black"
+            android:textColorHint="@color/font_gray"
+            android:textSize="@dimen/tv_14_sp"
+            />
+
+        <Button
+            android:id="@+id/find_pwd_verify_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@null"
+            android:paddingLeft="@dimen/x7"
+            android:paddingRight="@dimen/x7"
+            android:text="获取验证码"
+            android:textColor="@color/font_orange"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y36"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/edit_bg"
+            android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/x18"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_pwd"/>
+            <com.etuo.kucun.widget.ClearEditText
+                android:id="@+id/login_pwd_et"
+                style="@style/CommonEditText"
+                android:layout_weight="1"
+                android:hint="设置新密码"
+                android:inputType="textPassword"
+                android:maxLength="20"/>
+
+            <CheckBox
+                android:id="@+id/login_pwd_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/login_pwd_et"
+                android:button="@drawable/check_pwd_show"
+                android:paddingRight="@dimen/x5"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_bt"
+            style="@style/CommonBlueBtn"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/y30"
+            android:text="确认"/>
+    </LinearLayout>

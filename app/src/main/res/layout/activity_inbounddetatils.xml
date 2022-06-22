@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--主页入库点击入库计划点击（入库详情）-->
+    <RelativeLayout
+        android:id="@+id/rl_general_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_blue">
+
+        <ImageView
+            android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/x15"
+            android:paddingRight="@dimen/x10"
+            android:src="@drawable/back_white"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tv_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llfirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_general_header_bar"
+        android:background="@color/white"
+        android:padding="@dimen/common_10dp">
+
+        <TextView
+            android:id="@+id/tv_orderNum_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单编号:"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/tv_16_sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_orderNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_5dp"
+            android:singleLine="true"
+            android:text="0000000"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/tv_16_sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_outList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bt"
+        android:layout_below="@+id/llfirst"
+        android:divider="@color/colorBackground"
+        android:dividerHeight="@dimen/y5"
+        app:ptrAnimationStyle="flip"
+        app:ptrMode="both">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/ll_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        tools:ignore="DisableBaselineAlignment,ObsoleteLayoutParam">
+
+        <LinearLayout
+            android:id="@+id/ll_delete"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/common_45dp"
+            android:layout_weight="1"
+            android:background="@color/font_orange"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_jian"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5dp"
+                android:text="删减"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_18_sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/common_45dp"
+            android:layout_weight="1"
+            android:background="@color/font_orange_red"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_jia"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5dp"
+                android:text="添加"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_18_sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
